@@ -26,10 +26,10 @@ RPROVIDES_${KERNEL_PACKAGE_NAME}-image = "kernel-image-${KERNEL_VERSION}"
 
 SRC_URI += "http://downloads.mutant-digital.net/linux-${PV}-${ARCH}.tar.gz;name=${ARCH} \
 	file://defconfig \
-	file://initramfs-subdirboot.cpio.gz;unpack=0 \
 "
 
 SRC_URI_append_arm = " \
+        file://initramfs-subdirboot.cpio.gz;unpack=0 \
 	file://findkerneldevice.sh \
 	file://reserve_dvb_adapter_0.patch \
 	file://blacklist_mmc0.patch \
