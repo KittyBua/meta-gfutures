@@ -35,6 +35,7 @@ SRC_URI_append_arm = " \
 	file://blacklist_mmc0.patch \
 	file://export_pmpoweroffprepare.patch \
 	file://enable_hauppauge_solohd.patch \
+	file://make-yyloc-declaration-extern.patch \
 "
 
 S = "${WORKDIR}/linux-${PV}"
